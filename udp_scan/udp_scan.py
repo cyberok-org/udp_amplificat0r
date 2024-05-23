@@ -341,16 +341,20 @@ def generate_udpx():
 
 def print_help():
     print("Help:")
-    print(print("\tpython3 udp_scan.py [PARAM] [OPTIONS]"))
+    print("\tpython3 udp_scan.py [PARAM] [OPTIONS]")
     print("")
     print("To generate script to scan with ZMAP:")
     print("\tpython3 udp_scan.py --generate-scan zmap")
+    print("")
     print("To generate script to scan with MASSCAN:")
     print("\tpython3 udp_scan.py --generate-scan masscan")
+    print("")
     print("To generate file with probes in UDPX format:")
     print("\tpython3 udp_scan.py --get-probes udpx")
+    print("")
     print("To generate file with probes in NMAP-PAYLOADS format:")
     print("\tpython3 udp_scan.py --get-probes nmap-payloads")
+    print("")
     print("To generate file with probes in NMAP-PAYLOADS format with exact RARITY:")
     print("\tpython3 udp_scan.py --get-probes nmap-payloads 1")
 
