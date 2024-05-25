@@ -60,4 +60,8 @@ To check scope for IPs who have responded with banners, bigger than 1000 bytes:
 
 
 ## nmap-service-probes_udp_only_recasted
-It's a recasted by CyberOK version of file [nmap-service-probes](https://svn.nmap.org/nmap/nmap-service-probes). Some ports added to probes and rarities of some probes are incremented. The list of recasts is mentioned at the beginning of the file. You can use it with nmap or use it with `udp_scan/udp_scan.py` tool. To use this file with `udp_scan.py` tool, just put it into `./udp_scan` folder and rename to `nmap-service-probes`. 
+It's a recasted by CyberOK version of file [nmap-service-probes](https://svn.nmap.org/nmap/nmap-service-probes). Some ports added to probes and rarities of some probes are incremented. The list of recasts is mentioned at the beginning of the file. You can use it with nmap or use it with `udp_scan/udp_scan.py` tool. To use this file with `udp_scan.py` tool, just put it into `./udp_scan` folder and rename to `nmap-service-probes`.
+
+
+**Disclaimer**:
+All materials and tools are provided to community only for use in educational puprose. Analyze only systems, you own or have authorized access to. 
