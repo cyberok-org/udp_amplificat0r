@@ -62,6 +62,20 @@ To check scope for IPs who have responded with banners, bigger than 1000 bytes:
 ## nmap-service-probes_udp_only_recasted
 It's a recasted by CyberOK version of file [nmap-service-probes](https://svn.nmap.org/nmap/nmap-service-probes). Some ports added to probes and rarities of some probes are incremented. The list of recasts is mentioned at the beginning of the file. You can use it with nmap or use it with `udp_scan/udp_scan.py` tool. To use this file with `udp_scan.py` tool, just put it into `./udp_scan` folder and rename to `nmap-service-probes`.
 
+## get_ascii
+The `get_ascii.py` script reads hex results of scan and interprets them as readable text, if possible. Sometimes, UDP banners may hold human-readable information like vendor, model, version, hostname, etc. You can use this script to analyze the results of zmap scan and see if some human-readable information is in place.
+
+```
+Usage:
+        python3 get_ascii.py ZMAP_RESULTS_FILE.result
+Example:
+        python3 get_ascii.py /results/27015-STEAM_nmap_payloads.result
+
+        192.168.0.1:I0 101FPS [CSDM] de_go_go_go cstrike Counter-Strike dl 1.1.2.7/Stdio i
+        192.168.0.2:I CSS{V34}( ) [18+] cs_office cstrike Protected by Kigen's Anti-Cheat dl 1.0.0.34
+        192.168.0.3:m37.230.137.89:27015 css_train cstrike Counter-Strike /dl
+...
+``` 
 
 **Disclaimer**:
 All materials and tools are provided to community only for use in educational puprose. Analyze only systems, you own or have authorized access to. 
